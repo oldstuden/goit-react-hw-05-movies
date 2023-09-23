@@ -6,7 +6,7 @@ import { Title } from './Home.styled';
 import { Loader } from 'components/Loader/Loader';
 import { useNavigate } from 'react-router-dom';
 
-export function Home() {
+export default function Home() {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();

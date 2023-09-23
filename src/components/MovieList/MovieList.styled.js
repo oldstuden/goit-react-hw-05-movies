@@ -15,7 +15,7 @@ export const Link = styled(NavLink)`
 
   &:hover {
     color: white;
-    background-color: #f55138;
+    background-color: #0735e2;
     border-radius: 3px;
   }
 `;

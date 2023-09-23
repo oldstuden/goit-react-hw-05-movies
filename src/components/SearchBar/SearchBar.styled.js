@@ -9,16 +9,15 @@ export const SearchForm = styled.form`
   display: flex;
   align-items: center;
   width: 100%;
-  //   max-width: 450px;
   background-color: #fff;
-  border-radius: 4px;
+  border-radius: 12px;
   border: 1px solid gray;
   overflow: hidden;
 `;
 
 export const SearchFormBtn = styled.button`
   display: inline-block;
-  width: 48px;
+  width: 96px;
   height: 48px;
   border: 0;
 
@@ -37,7 +36,7 @@ export const SearchFormInput = styled.input`
   font-size: 20px;
   border: none;
   outline: none;
-  padding-left: 4px;
+  padding-left: 12px;
   padding-right: 4px;
 
   &::placeholder {

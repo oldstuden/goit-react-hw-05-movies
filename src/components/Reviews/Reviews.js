@@ -4,7 +4,7 @@ import { getReviewById } from 'servicesApi/api';
 import { AuthorName, ListReviews } from './Reviews.styled';
 import { Loader } from 'components/Loader/Loader';
 
-export function Reviews() {
+export default function Reviews() {
   const [review, setReview] = useState();
   const [loading, setLoading] = useState(false);
   const { movieId } = useParams();

@@ -4,7 +4,7 @@ import { getCastById } from 'servicesApi/api';
 import poster from '../../images/poster.png';
 import { CastList, CastWrapper } from './Cast.stayled';
 
-export function Cast() {
+export default function Cast() {
   const [cast, setCast] = useState();
   const { movieId } = useParams();
 

@@ -1,6 +1,6 @@
 import { useSearchParams } from 'react-router-dom';
 import { useState } from 'react';
-import { FcSearch } from 'react-icons/fc';
+import { BsSearch } from 'react-icons/bs';
 import {
   SearchForm,
   SearchFormBtn,
@@ -9,7 +9,7 @@ import {
   Wrapper,
 } from './SearchBar.styled';
 
-export function SearchBar() {
+export default function SearchBar() {
   const [, setSearchParams] = useSearchParams();
   const [value, setValue] = useState('');
 
@@ -28,7 +28,7 @@ export function SearchBar() {
       <SearchForm onSubmit={handleSubmit}>
         <SearchFormBtn type="submit">
           <SearchFormBtnLabel>
-            <FcSearch size="25" />
+            <BsSearch size="25" />
           </SearchFormBtnLabel>
         </SearchFormBtn>
 
@@ -39,10 +39,9 @@ export function SearchBar() {
           name="movie"
           autoComplete="off"
           autoFocus
-          placeholder="Search movies"
+          placeholder="Search movies..."
         />
       </SearchForm>
     </Wrapper>
   );
 }
-export default SearchBar;

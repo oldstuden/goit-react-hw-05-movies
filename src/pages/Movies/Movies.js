@@ -6,7 +6,7 @@ import { toast } from 'react-hot-toast';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { getMovieByQuery } from 'servicesApi/api';
 
-export function Movies() {
+export default function Movies() {
   const [searchParams] = useSearchParams();
   const query = searchParams.get('movie') ?? '';
 

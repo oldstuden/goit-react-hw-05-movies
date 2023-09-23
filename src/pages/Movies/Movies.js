@@ -4,9 +4,9 @@ import SearchBar from 'components/SearchBar/SearchBar';
 import { useEffect, useState } from 'react';
 import { toast } from 'react-hot-toast';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { getMovieByQuery } from 'services/fetch';
+import { getMovieByQuery } from 'servicesApi/api';
 
-export default function Movies() {
+export function Movies() {
   const [searchParams] = useSearchParams();
   const query = searchParams.get('movie') ?? '';
 
